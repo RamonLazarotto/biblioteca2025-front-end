@@ -3,11 +3,13 @@ import './App.css';
 import Menu from './componentes/Menu.js';
 import FormAutor from './paginas/FormAutor.js';
 import FormCategoria from './paginas/FormCategoria.js';
+import FormEditora from './paginas/FormEditora.js';
+import FormLivro from './paginas/FormLivro.js';
 import Home from './paginas/Home.js';
 import ListaAutor from './paginas/ListaAutor.js';
 import ListaCategoria from './paginas/ListaCategoria.js';
 import ListaEditora from './paginas/ListaEditora.js';
-import FormEditora from './paginas/FormEditora.js';
+import ListaLivro from './paginas/ListaLivro.js';
 
 function App() {
   return (
@@ -29,6 +31,10 @@ function App() {
             <Route path='/listaeditora' element={<ListaEditora />} />
             <Route path='/cadastroeditora' element={<FormEditora />} />
             <Route path='/cadastroeditora/:id' element={<FormEditora />} />
+
+            <Route path='/listalivro' element={<ListaLivro />} />
+            <Route path='/cadastrolivro' element={<FormLivro />} />
+            <Route path='/cadastrolivro' element={<FormLivro />} />
 
             <Route path='*' element={<Home />} />
           </Routes>
