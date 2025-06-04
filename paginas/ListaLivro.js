@@ -45,7 +45,6 @@ export default function ListaLivro() {
                                         <a className="btn btn-primary"
                                             href={`/cadastrolivro/${d.idlivro}`}>Alterar</a>
                                     </td>
-                                    <td>{d.idlivro}</td>
                                     <td>{d.titulo}</td>
                                     <td>{d.publicacao}</td>
                                     <td>{d.paginas}</td>
